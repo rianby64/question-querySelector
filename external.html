@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <div id="S">
+      S
+    </div>
+  </body>
+  <script>
+    test(_ => {
+      assert_true(document.currentScript.ownerDocument.querySelector('div#S') instanceof HTMLElement);
+    }, 'Query the "div#S" from ownerDocument');
+  </script>
+</html>

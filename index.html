@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <link href="testharness.js/testharness.css" rel="stylesheet">
+    <script src="testharness.js/testharness.js"></script>
+    <script src="testharness.js/testharnessreport.js"></script>
+
+    <link href="external.html" rel="import">
+  </head>
+  <body>
+    <div id="M">
+      m
+    </div>
+  </body>
+  <script>
+    test(_ => {
+      assert_true(document.querySelector('div#M') instanceof HTMLElement);
+    }, 'Query the "div#M" from document');
+  </script>
+</html>
